@@ -9,7 +9,7 @@ Please don't sue me, I am really poor
 
 ## Usage
 It's is eclipse project, you know how to do</br>
-Source folder is too big, so I upload them to my google drive </br>
+Resource folder is too big, so I upload them to my google drive </br>
 >https://drive.google.com/drive/folders/0B2uWL5j2yU39ZWhMam1UVmxfNDA?usp=sharing
 ## How to play
 B: Open backpack</br>
