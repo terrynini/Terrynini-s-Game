@@ -7,10 +7,10 @@ This is not a good game, because there is nothing to accomplish</br>
 ## If there is infringement, please inform me
 Please don't sue me, I am really poor
 
-## Usage
-It's is eclipse project, you know how to do</br>
-Resource folder is too big, so I upload them to my google drive </br>
->https://drive.google.com/drive/folders/0B2uWL5j2yU39RmVLcFFVSWR3YzQ?usp=sharing
+## Play the game
+You can download the file from my google drive
+https://drive.google.com/file/d/0B2uWL5j2yU39UGdrVjRGZ0hsdUE/view?usp=sharing
+
 ## How to play
 B: Open backpack</br>
 Z: Drink heal potion</br>
