@@ -46,7 +46,7 @@ public class Display implements KeyListener{
 		frame.setResizable(false);
 		frame.setVisible(true);
 		frame.setLocationRelativeTo(null);
-		frame.setIconImage(new ImageIcon("res/img/icon.png").getImage());
+		frame.setIconImage(new ImageIcon(Display.class.getResource("/img/icon.png")).getImage());
 		
 		canvas = new Canvas();
 		canvas.setPreferredSize(new Dimension(width, height));

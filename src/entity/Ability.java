@@ -17,11 +17,11 @@ public class Ability {
 	private audioPlayer ap;
 	public static Ability[] allkind = new Ability[100];
 	public static Ability wind3 
-		= new Ability(0,0,2,2f,50,TextureLoader.animationWind,new Rectangle(76,76,40,40),new audioPlayer("res/audio/se/Wind5.wav"));
+		= new Ability(0,0,2,2f,50,TextureLoader.animationWind,new Rectangle(76,76,40,40),new audioPlayer("/audio/se/Wind5.wav"));
 	public static Ability claw
-		= new Ability(0,1,1,2f,0,TextureLoader.animationClaw,new Rectangle(60,56,60,80),new audioPlayer("res/audio/se/Slash1.wav"));
+		= new Ability(0,1,1,2f,0,TextureLoader.animationClaw,new Rectangle(60,56,60,80),new audioPlayer("/audio/se/Slash1.wav"));
 	public static Ability hit
-		=new Ability(0,2,1,0.5f,0,TextureLoader.animationHit,new Rectangle(76,76,40,40),new audioPlayer("res/audio/se/Blow1.wav"));
+		=new Ability(0,2,1,0.5f,0,TextureLoader.animationHit,new Rectangle(76,76,40,40),new audioPlayer("/audio/se/Blow1.wav"));
 	
 	
 	public Ability(int type,int id,int damage,float range,float cost,BufferedImage[] animate,Rectangle bounds,audioPlayer a){

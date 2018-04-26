@@ -24,8 +24,8 @@ public class BackPackMainCard extends ViewCard {
 			rrl = new RoundRectangle2D.Float(1, 1, 24 * 8 - 2, game.height - 4 * 24 - 2, 21, 21);
 	private BufferedImage selectbox = new BufferedImage(16 * 9, 16 * 3, BufferedImage.TYPE_INT_ARGB);
 	private int options = 0;
-	private audioPlayer selecting = new audioPlayer("res/audio/se/Decision2.wav");
-	private audioPlayer decision = new audioPlayer("res/audio/se/Cancel2.wav");
+	private audioPlayer selecting = new audioPlayer("/audio/se/Decision2.wav");
+	private audioPlayer decision = new audioPlayer("/audio/se/Cancel2.wav");
 
 	public BackPackMainCard(Game g) {
 		super(g);
@@ -59,7 +59,7 @@ public class BackPackMainCard extends ViewCard {
 				alpha = 1f;
 			}
 		if (game.getDisplay().getKeyboard(KeyEvent.VK_ENTER)) {
-			// ³é“Q®‹Ãæ
+			// ï¿½ï¿½Qï¿½ï¿½ï¿½ï¿½
 			decision.start(1);
 			switch(options){
 				case 0:
@@ -129,7 +129,7 @@ public class BackPackMainCard extends ViewCard {
 			for (int i = 9; i < game.width / 24; i++)
 				g.drawImage(TextureLoader.sysWindow[6], 24 * i - 1, game.height - 5 * 24, null);
 			g.drawImage(TextureLoader.sysWindow[7], game.width - 24 - 1, game.height - 5 * 24, null);
-			// items Ö®ááÌæ“Q³É½ÇÉ«ÁÐ±í
+			// items Ö®ï¿½ï¿½ï¿½ï¿½Qï¿½É½ï¿½É«ï¿½Ð±ï¿½
 			//game.getGameScene().getPlayer().getBackpack().render(g,0);
 		}
 		g.setClip(null);
@@ -141,8 +141,8 @@ public class BackPackMainCard extends ViewCard {
 		g2d.setRenderingHint(
 				RenderingHints.KEY_ANTIALIASING,
 				RenderingHints.VALUE_ANTIALIAS_ON);
-		g2d.drawString("±³°ü", 65, 72);
-		g2d.drawString("ÔO¶¨", 65, 120);
+		g2d.drawString("ï¿½ï¿½ï¿½ï¿½", 65, 72);
+		g2d.drawString("ï¿½Oï¿½ï¿½", 65, 120);
 
 	}
 }

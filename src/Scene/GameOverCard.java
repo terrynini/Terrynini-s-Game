@@ -37,7 +37,7 @@ public class GameOverCard  extends ViewCard{
 				menu.setSize(822,653);
 				menu.setLocationRelativeTo(null);
 				menu.setVisible(true);
-				menu.setIconImage(new ImageIcon("res/img/icon.png").getImage());
+				menu.setIconImage(new ImageIcon(Menu.class.getResource("/img/icon.png")).getImage());
 				menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				menu.setResizable(false);
 				game.stop();

@@ -38,12 +38,12 @@ public class Menu extends JFrame implements KeyListener{
 	private int select = 3;
 	
 	private ImageIcon nopic = new ImageIcon("");
-	private ImageIcon selectp = new ImageIcon("res/img/titles1/select2.png");
-	private ImageIcon castle = new ImageIcon("res/img/titles1/Castle_modify.png");
+	private ImageIcon selectp = new ImageIcon(Menu.class.getResource("/img/titles1/select2.png"));
+	private ImageIcon castle = new ImageIcon(Menu.class.getResource("/img/titles1/Castle_modify.png"));
 	
-	private audioPlayer ap = new audioPlayer("res/audio/bgm/Theme1.wav");
-	private audioPlayer selecting = new audioPlayer("res/audio/se/Decision2.wav");
-	private audioPlayer decision = new audioPlayer("res/audio/se/Decision1.wav");
+	private audioPlayer ap = new audioPlayer("/audio/bgm/Theme1.wav");
+	private audioPlayer selecting = new audioPlayer("/audio/se/Decision2.wav");
+	private audioPlayer decision = new audioPlayer("/audio/se/Decision1.wav");
 
 	public Menu(){
 		ap.start(100);
@@ -106,7 +106,7 @@ public class Menu extends JFrame implements KeyListener{
 					//display game
 					ap.stop();
 					decision.stop();
-					Game game = new Game("overwatch",816,624);
+					Game game = new Game("Terrynini's Game",816,624);
 					game.start();
 					this.dispose();
 					break;

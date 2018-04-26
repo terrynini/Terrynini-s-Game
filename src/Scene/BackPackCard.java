@@ -19,8 +19,8 @@ public class BackPackCard extends ViewCard {
 			game.height - 4 * 24 - 2, 21, 21);
 	private BufferedImage selectbox , bar, barall;
 	private int options = 0,itemhead = 0,buttonwait = 0;
-	private audioPlayer selecting = new audioPlayer("res/audio/se/Decision2.wav");
-	private audioPlayer decision = new audioPlayer("res/audio/se/Cancel2.wav");
+	private audioPlayer selecting = new audioPlayer("/audio/se/Decision2.wav");
+	private audioPlayer decision = new audioPlayer("/audio/se/Cancel2.wav");
 	private BackPack backpack;
 	public BackPackCard(Game g) {
 		super(g);

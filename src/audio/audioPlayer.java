@@ -2,6 +2,8 @@ package audio;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
@@ -22,10 +24,10 @@ public class audioPlayer implements Runnable{
 	
 	public void run(){
 		while(play > 0){
-		File audio = new File(file);
-		if(!audio.exists()){
-			return;
-		}
+		URL audio = null;
+		
+		audio = audioPlayer.class.getResource(file);
+
 		AudioInputStream inputStream = null;
 		try{
 			inputStream = AudioSystem.getAudioInputStream(audio);
